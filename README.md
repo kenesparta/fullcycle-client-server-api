@@ -1,2 +1,2 @@
-# fullcycle-client-server-api
+# FullCycle client-server api
 Fullcycle Pos Go Expert - Client Server API
