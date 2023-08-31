@@ -57,4 +57,6 @@ func ReadDollar(w http.ResponseWriter, r *http.Request) {
 		w.WriteHeader(http.StatusInternalServerError)
 		return
 	}
+
+	log.Printf("sucessfull response")
 }

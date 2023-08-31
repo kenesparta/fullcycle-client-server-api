@@ -3,7 +3,6 @@ package dollar
 import (
 	"context"
 	"encoding/json"
-	"fmt"
 	"io"
 	"log"
 	"net/http"
@@ -53,7 +52,6 @@ func RequestDollarPrice(ctx context.Context) (*Conversion, error) {
 		return nil, unmErr
 	}
 
-	fmt.Println(string(readBody))
 	return &conv, nil
 }
 
