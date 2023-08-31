@@ -1,3 +1,8 @@
+start:
+	go work init
+	go work use ./server
+	go work use ./client
+
 run-server:
 	go run ./server
 
