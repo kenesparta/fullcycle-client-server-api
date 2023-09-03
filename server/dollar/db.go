@@ -77,8 +77,11 @@ VALUES (?,?,?,?,?,?,?,?,?,?,?,?)
 }
 
 func (dc *DatabaseConnection) read() ([]Cotacao, error) {
+	ctx, cancel := context.WithTimeout(dc.ctx, constants.MaxDbTimeout)
+	defer cancel()
+
 	var cotList []Cotacao
-	rows, err := dc.db.QueryContext(dc.ctx, `SELECT * FROM cotacao`)
+	rows, err := dc.db.QueryContext(ctx, `SELECT * FROM cotacao`)
 	for rows.Next() {
 		var cotItem Cotacao
 		rows.Scan(

@@ -1,4 +1,4 @@
-start:
+init:
 	go work init
 	go work use ./server
 	go work use ./client

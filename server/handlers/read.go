@@ -3,10 +3,9 @@ package handlers
 import (
 	"context"
 	"encoding/json"
+	"github.com/kenesparta/fullcycle-client-server-api/server/dollar"
 	"log"
 	"net/http"
-
-	"github.com/kenesparta/fullcycle-client-server-api/server/dollar"
 )
 
 func HandleDollarPrice(w http.ResponseWriter, r *http.Request) {
