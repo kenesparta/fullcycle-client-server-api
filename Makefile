@@ -1,3 +1,4 @@
+# Run this first
 init:
 	go work init
 	go work use ./server

@@ -2,7 +2,9 @@
 
 Fullcycle Pos Go Expert - Client Server API
 
-# Getting started
+> We are using golang workspaces on this project!
+
+# 🚀 How to start?
 
 1. If you haven't been created a golang workspace, you can run this command to create it: `make init`.
 2. Then, open a terminal and run the server: `make run-server`.
